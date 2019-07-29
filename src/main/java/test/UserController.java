@@ -6,6 +6,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * test upload
+     */
     public boolean addUser(UserDto userDto) {
         int added = userService.addUser(userDto);
         System.out.println("调用后返回值added" + added);
